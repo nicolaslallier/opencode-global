@@ -1,6 +1,6 @@
 ---
 description: DragonWarrior — projet Python pré-scaffold, à monter proprement avant tout code.
-model: ollama-remote/qwen3.8:27b-mlx
+model: ollama-remote/muse-glimmer
 mode: subagent
 temperature: 0.2
 permission:

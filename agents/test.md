@@ -1,6 +1,6 @@
 ---
 description: Écrit et fait passer les tests ; diagnostique les échecs de suite.
-model: ollama-remote/qwen3.8:27b-mlx
+model: ollama-remote/muse-glimmer
 mode: subagent
 temperature: 0.1
 permission:
