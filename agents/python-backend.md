@@ -1,6 +1,6 @@
 ---
 description: Écrit du Python de backend/API — FastAPI, Pydantic, SQLAlchemy, async. Tout sous uv, ruff, mypy, pytest.
-model: ollama-remote/muse-glimmer
+model: ollama-remote/muse-glimmer:latest
 mode: subagent
 temperature: 0.1
 permission:

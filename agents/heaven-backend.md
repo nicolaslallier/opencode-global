@@ -1,6 +1,6 @@
 ---
 description: Backend Heaven — FastAPI + Uvicorn, Python 3.14 piloté par uv.
-model: ollama-remote/muse-glimmer
+model: ollama-remote/muse-glimmer:latest
 mode: subagent
 temperature: 0.1
 permission:

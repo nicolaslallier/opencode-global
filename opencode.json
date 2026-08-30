@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "ollama-remote/muse-glimmer",
+  "model": "ollama-remote/muse-glimmer:latest",
   "small_model": "ollama-remote/PLACEHOLDER",
   "provider": {
     "ollama-remote": {

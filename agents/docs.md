@@ -1,6 +1,6 @@
 ---
 description: Écrit et met à jour la documentation (README, AGENTS.md, docstrings, guides).
-model: ollama-remote/muse-glimmer
+model: ollama-remote/muse-glimmer:latest
 mode: subagent
 temperature: 0.2
 permission:

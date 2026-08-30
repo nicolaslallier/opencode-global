@@ -1,6 +1,6 @@
 ---
 description: Images Docker de l'env de dev (repo AI) — Colima comme daemon, un dossier par image, tout piloté par le Makefile.
-model: ollama-remote/muse-glimmer
+model: ollama-remote/muse-glimmer:latest
 mode: subagent
 temperature: 0.1
 permission:
