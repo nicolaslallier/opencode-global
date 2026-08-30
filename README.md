@@ -85,6 +85,7 @@ Agents **génériques**, utiles partout :
 | `docs` | README / AGENTS.md / docstrings à partir du code réel | oui |
 | `test` | écrit les tests, les fait passer, diagnostique la suite | oui |
 | `python` | data/ML : pandas, numpy, scikit-learn, PyTorch — uv, ruff, mypy, pytest | oui |
+| `python-backend` | Python de service : FastAPI, Pydantic, SQLAlchemy, async — uv, ruff, mypy, pytest | oui |
 
 Agents **taillés pour tes dépôts** (chacun connaît déjà les commandes réelles du repo,
 tirées de son `AGENTS.md`) :
@@ -99,8 +100,11 @@ tirées de son `AGENTS.md`) :
 
 `build` et `plan` restent les agents primaires natifs d'opencode ; `python` est un agent
 primaire supplémentaire, sélectionnable au Tab dans la TUI. Les autres sont des
-*subagents* : tu les appelles avec `@review`, `@security`, `@infra`, … dans la TUI, ou avec
-`--agent` en ligne de commande.
+*subagents* : tu les appelles avec `@review`, `@security`, `@python-backend`, `@infra`, … dans la
+TUI, ou avec `--agent` en ligne de commande.
+
+`python` et `python-backend` ne se recouvrent pas : le premier fait du data/ML (pandas, sklearn,
+PyTorch), le second du code de service (APIs, base de données, async).
 
 Pour en ajouter un : dépose un `.md` dans `~/.config/opencode/agents/` (ou
 `opencode agent create`). Il est immédiatement visible dans tous les projets.
