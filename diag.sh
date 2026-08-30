@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Diagnostic : pourquoi opencode ne prend pas le provider Ollama distant.
-OLLAMA_URL="${OLLAMA_URL:-http://192.168.2.40:11434}"
+OLLAMA_URL="${OLLAMA_URL:-http://192.168.2.41:11434}"
 SRV="${OPENCODE_SERVER_URL:-http://127.0.0.1:4099}"
 CFG="${XDG_CONFIG_HOME:-$HOME/.config}/opencode"
 h() { printf '\n\033[1;36m===== %s =====\033[0m\n' "$*"; }
