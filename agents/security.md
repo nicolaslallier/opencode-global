@@ -1,6 +1,6 @@
 ---
 description: Revue de code orientée sécurité — cherche les vulnérabilités exploitables, avec chemin d'attaque et correctif. Ne modifie rien.
-model: ollama-remote/muse-glimmer:latest
+model: ollama-remote/qwen3.8:27b-mlx
 mode: subagent
 temperature: 0.1
 permission:

@@ -1,6 +1,6 @@
 ---
 description: Frontend Heaven — Vite + TypeScript, sans framework UI.
-model: ollama-remote/muse-glimmer:latest
+model: ollama-remote/qwen3.8:27b-mlx
 mode: subagent
 temperature: 0.2
 permission:

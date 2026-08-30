@@ -1,6 +1,6 @@
 ---
 description: Relit du code déjà écrit et remonte bugs, risques et simplifications. Ne modifie rien.
-model: ollama-remote/muse-glimmer:latest
+model: ollama-remote/qwen3.8:27b-mlx
 mode: subagent
 temperature: 0.1
 permission:
