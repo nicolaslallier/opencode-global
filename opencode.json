@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama-remote/qwen3.8:27b-mlx",
+  "small_model": "ollama-remote/PLACEHOLDER",
+  "provider": {
+    "ollama-remote": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (192.168.2.40)",
+      "options": {
+        "baseURL": "http://192.168.2.40:11434/v1"
+      },
+      "models": {
+        "PLACEHOLDER": {
+          "name": "PLACEHOLDER",
+          "tools": true
+        }
+      }
+    }
+  },
+  "disabled_providers": [
+    "ollama"
+  ],
+  "lsp": true,
+  "server": {
+    "port": 4099,
+    "hostname": "127.0.0.1",
+    "mdns": false
+  },
+  "permission": {
+    "edit": "allow",
+    "bash": {
+      "*": "allow",
+      "rm -rf *": "ask",
+      "sudo *": "ask",
+      "git push --force*": "ask",
+      "git reset --hard*": "ask",
+      "dd *": "ask"
+    },
+    "webfetch": "allow"
+  },
+  "autoupdate": "notify"
+}
