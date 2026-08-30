@@ -1,6 +1,6 @@
 ---
 description: Python data/ML — pandas, numpy, scikit-learn, PyTorch. Tout sous uv, ruff, mypy, pytest. Modules .py, jamais de notebook.
-model: ollama-remote/muse-glimmer:latest
+model: ollama-remote/qwen3.8:27b-mlx
 mode: primary
 temperature: 0.1
 permission:
