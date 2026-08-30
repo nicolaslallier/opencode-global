@@ -5,7 +5,7 @@ set -euo pipefail
 
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEST="${XDG_CONFIG_HOME:-$HOME/.config}/opencode"
-OLLAMA_URL="${OLLAMA_URL:-http://192.168.2.40:11434}"
+OLLAMA_URL="${OLLAMA_URL:-http://192.168.2.41:11434}"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 
 say() { printf '\033[1;36m==>\033[0m %s\n' "$*"; }

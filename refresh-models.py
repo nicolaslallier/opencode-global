@@ -21,7 +21,7 @@ CONFIG = pathlib.Path(
     else pathlib.Path.home() / ".config" / "opencode" / "opencode.json"
 ).expanduser()
 
-url = "http://192.168.2.40:11434"
+url = "http://192.168.2.41:11434"
 for i, a in enumerate(sys.argv):
     if a == "--url" and i + 1 < len(sys.argv):
         url = sys.argv[i + 1]
