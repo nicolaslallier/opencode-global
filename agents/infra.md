@@ -1,6 +1,6 @@
 ---
 description: Stack Docker Compose maison — NGINX, Postgres/pgvector, Keycloak, MinIO, RabbitMQ, Technitium DNS, LGTM.
-model: ollama-remote/qwen3.8:27b-mlx
+model: ollama-remote/muse-glimmer:latest
 mode: subagent
 temperature: 0.1
 permission:
