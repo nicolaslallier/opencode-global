@@ -5,9 +5,9 @@
   "provider": {
     "ollama-remote": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "Ollama (192.168.2.41)",
+      "name": "Ollama (192.168.1.130)",
       "options": {
-        "baseURL": "http://192.168.2.41:11434/v1"
+        "baseURL": "http://192.168.1.130:11434/v1"
       },
       "models": {
         "PLACEHOLDER": {
