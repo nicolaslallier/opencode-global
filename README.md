@@ -17,7 +17,7 @@ Le script est idempotent et sauvegarde tout ce qu'il remplace (`*.bak-<date>`). 
 2. écrit `~/.config/opencode/opencode.json` (provider + serveur + permissions) ;
 3. copie les agents dans `~/.config/opencode/agents/` (+ un lien `agent` → `agents`,
    parce que selon la version opencode lit l'un ou l'autre) ;
-4. interroge Ollama sur `http://192.168.2.41:11434` et remplit la liste réelle des
+4. interroge Ollama sur `http://192.168.1.130:11434` et remplit la liste réelle des
    modèles. Le modèle principal est **épinglé à `ollama-remote/qwen3.8:27b-mlx`** et n'est
    jamais réécrit automatiquement : si le serveur ne le sert pas, le script te le dit
    et sort en code 2 au lieu de le remplacer en douce. Seul `small_model`, laissé en
@@ -39,10 +39,10 @@ fois pour toutes en arrière-plan, et chaque client s'y **rattache** avec
                    ~/.config/opencode/opencode.json  ──┐
                    ~/.config/opencode/agents/*.md    ──┤ (config globale, lue au démarrage)
                                                        ▼
-  TUI ────────────┐                        ┌──────────────────────┐        ┌──────────────┐
-  opencode run ───┼──► 127.0.0.1:4099 ────►│  opencode serve      │───────►│ Ollama       │
-  script / curl ──┤    (HTTP + OpenAPI)    │  (LaunchAgent)       │        │ 192.168.2.41 │
-  autre machine ──┘                        └──────────────────────┘        └──────────────┘
+  TUI ────────────┐                        ┌──────────────────────┐        ┌───────────────┐
+  opencode run ───┼──► 127.0.0.1:4099 ────►│  opencode serve      │───────►│ Ollama        │
+  script / curl ──┤    (HTTP + OpenAPI)    │  (LaunchAgent)       │        │ 192.168.1.130 │
+  autre machine ──┘                        └──────────────────────┘        └───────────────┘
 ```
 
 Un seul endroit définit les agents. Un seul endroit définit le modèle. Les clients
@@ -189,7 +189,7 @@ surcharges.
   plist) — sinon n'importe qui sur le LAN a un shell sur ton Mac via l'outil `bash`.
 - Les permissions sont sur `ask` pour `edit` et `bash`. Un agent qui doit tourner sans
   surveillance a besoin de son propre `permission: allow` dans son `.md`.
-- Ollama doit écouter sur le réseau côté 192.168.2.41 (`OLLAMA_HOST=0.0.0.0:11434`),
+- Ollama doit écouter sur le réseau côté 192.168.1.130 (`OLLAMA_HOST=0.0.0.0:11434`),
   sinon `refresh-models.py` échouera avec un timeout.
 - `opencode web` remplace `serve` si tu veux en plus une interface web sur le même
   port ; il suffit de changer `serve` en `web` dans le plist.

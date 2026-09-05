@@ -16,7 +16,7 @@
 
 SHELL := /bin/bash
 
-OLLAMA_URL        ?= http://192.168.2.41:11434
+OLLAMA_URL        ?= http://192.168.1.130:11434
 OPENCODE_SERVER_URL ?= http://127.0.0.1:4099
 LABEL             := net.famillelallier.opencode
 PLIST             := $(HOME)/Library/LaunchAgents/$(LABEL).plist
